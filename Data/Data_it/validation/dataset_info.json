@@ -1,0 +1,118 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "it",
+  "dataset_name": "wikiann",
+  "dataset_size": 9264462,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/unimelb-nlp/wikiann@f0a3be6dc5564c0cc4150bb660144800a1f539d4/it/validation-00000-of-00001.parquet": {
+      "num_bytes": 697920,
+      "checksum": null
+    },
+    "hf://datasets/unimelb-nlp/wikiann@f0a3be6dc5564c0cc4150bb660144800a1f539d4/it/test-00000-of-00001.parquet": {
+      "num_bytes": 706039,
+      "checksum": null
+    },
+    "hf://datasets/unimelb-nlp/wikiann@f0a3be6dc5564c0cc4150bb660144800a1f539d4/it/train-00000-of-00001.parquet": {
+      "num_bytes": 1414165,
+      "checksum": null
+    }
+  },
+  "download_size": 2818124,
+  "features": {
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "O",
+          "B-PER",
+          "I-PER",
+          "B-ORG",
+          "I-ORG",
+          "B-LOC",
+          "I-LOC"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    },
+    "langs": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "spans": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "token_type_ids": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 12082586,
+  "splits": {
+    "validation": {
+      "name": "validation",
+      "num_bytes": 2292923,
+      "num_examples": 10000,
+      "dataset_name": "wikiann"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 2317702,
+      "num_examples": 10000,
+      "dataset_name": "wikiann"
+    },
+    "train": {
+      "name": "train",
+      "num_bytes": 4653837,
+      "num_examples": 20000,
+      "dataset_name": "wikiann"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
